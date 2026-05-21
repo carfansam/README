@@ -1,0 +1,12 @@
+ .hearts {
+            stroke: red;
+            stroke-width: 1px;
+            /*opacity: .4;*/
+            
+        }
+
+ .labels {
+            text-anchor: middle;
+            font-family: "Source Sans 3", sans-serif;
+            
+        }
