@@ -3,4 +3,4 @@ It aggregates the burn areas by months, this can help analyze trends in fires th
 This data is from UC Irvine Machine Learning Repository:
 https://archive.ics.uci.edu/dataset/162/forest+fires
 
-![Preview Image](D3HW2/d3_2pic.png)
+!(D3HW2/d3_2pic.png)
