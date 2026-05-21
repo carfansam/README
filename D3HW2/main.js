@@ -15,18 +15,23 @@ d3.csv("forestfires.csv").then(data => {
         d.area = +d.area || 0;
     });
 
-    // GROUP BY MONTH (THIS IS THE KEY PART)
-    const monthly = d3.rollups(
-        data,
-        v => d3.sum(v, d => d.area),
-        d => d.month
-    );
+    // MANUAL GROUP BY MONTH (no rollups)
+    const monthTotals = {};
+    data.forEach(d => {
+        const m = d.month;
+        if (!monthTotals[m]) {
+            monthTotals[m] = 0;
+        }
+        monthTotals[m] += d.area;
+    });
 
-    // convert to usable array
-    const formatted = monthly.map(d => ({
-        month: d[0],
-        total: d[1]
-    }));
+    // convert object → array
+    const formatted = Object.keys(monthTotals).map(m => {
+        return {
+            month: m,
+            total: monthTotals[m]
+        };
+    });
 
     console.log("MONTHLY DATA:", formatted);
 
@@ -65,10 +70,11 @@ d3.csv("forestfires.csv").then(data => {
         .attr("stroke", "black");
 
     // labels (months)
-    svg.selectAll("text.label")
+    svg.selectAll(".label")
         .data(formatted)
         .enter()
         .append("text")
+        .attr("class", "label")
         .attr("x", d => x(d.month) + x.bandwidth() / 2)
         .attr("y", svgH - 30)
         .attr("text-anchor", "middle")
