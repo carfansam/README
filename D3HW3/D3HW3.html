@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicle Fuel Economy Comparison</title>
+
+    <link rel="stylesheet" href="D3HW3Style.css">
+</head>
+
+<body>
+
+    <h1>Vehicle Fuel Economy Comparison</h1>
+
+    <p>
+        This chart compares vehicle fuel economy using city and highway MPG.
+        Use the dropdown to switch between fuel economy measures.
+    </p>
+
+    <label for="metricSelect">Choose MPG Type:</label>
+
+    <select id="metricSelect">
+        <option value="UCity">City MPG</option>
+        <option value="UHighway">Highway MPG</option>
+    </select>
+
+    <div id="chart"></div>
+
+    <p class="source">
+        Data Source: fueleconomy.gov
+    </p>
+
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="D3HW3js.js"></script>
+
+</body>
+</html>
