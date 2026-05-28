@@ -3,3 +3,4 @@ drop down menu allowing you to choose between viewing city or highway mileage of
 The data is from fueleconomy.gov as listed.
 
 ![City MPG Shown](previewd3hw3.png)
+![Highway MPG Shown](previewd3hw3.2.png)
