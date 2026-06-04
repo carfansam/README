@@ -1,0 +1,63 @@
+/* center whole page layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* centers the containers */
+}
+
+.story-section {
+    margin-top: 120px;
+    margin-bottom: 200px;
+}
+
+/* Center the block, but left-align the text inside it */
+.story-text,
+.story-interpretation,
+.story-transition,
+.story-conclusion {
+    max-width: 750px;
+    margin: 30px auto;   /* centers the block */
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: left;    /* left-aligns the text INSIDE the block */
+}
+
+h2 {
+    max-width: 750px;
+    margin: 40px auto 20px auto;
+    text-align: center;
+}
+
+/* Main title stays centered */
+h1 {
+    text-align: center;
+}
+
+/* centered */
+p {
+    text-align: center;
+}
+.indent {
+    text-indent: 2em;
+}
+.author-name {
+    text-align: center;
+    font-weight: 300;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+.sources-list {
+    list-style-type: none;   
+    padding-left: 0;         
+    margin-left: 0;
+    text-align: left;        
+}
+
+.sources-list li {
+    margin-bottom: 8px;
+}
