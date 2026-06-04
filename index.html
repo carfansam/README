@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Economy Through Policy & History</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+
+    <h1>How Cars Got Cleaner - And Why the Truth is More Complicated</h1>
+
+    <h3 class="author-name">By Sam Weisberg</h3>
+
+
+    <p>
+        Technology always improves, but how and why it happens in relation to the American car market is fascinating.
+    </p>
+
+
+    <!-- SECTION 1 — MPG OVER TIME -->
+    <section class="story-section">
+
+        <h2>The Last 40 Years of Vehicle Efficiency</h2>
+
+        <p class="story-text indent">
+            Examining trends in fuel economy can help analyze the progression of automotive technology. The Environmental Protection Agency began tracking vehicle efficiency and emissions data in 1975, following up on the 1965 Air Pollution Control Act
+            as well as the 1970 Clean Air Act. This second piece of legislation was really the first effective attempt at managing vehicle pollution. 
+            The act required vehicles to reduce carbon emissions by 90% by 1975, while this may seem drastic now, back then no emissions equipment was present in any manner.
+            The Clean Air Act essentially created the EPA, a pivotal entity in protecting and managing environments and our impact on them. Finally, in 1975, the Energy Policy and Conservation Act was passed.
+            This was in response to the 1973 oil embargo, which is similar to the current oil crisis in 2026. This act brought about the modern form of fuel economy standards we have today, called CAFE (Corporate Average Fuel Economy) standards. 
+        </p>
+
+        <div id="chart1"></div>
+
+        <p class="story-interpretation indent">
+            Fuel economy hovered at about 20 MPG for over 20 years, from 1985 to 2010 fuel economy remained about the same in new vehicles.
+            That by itself is not insignificant, the previously mentioned CAFE standards had been at 27 MPG for passenger cars since the beginning of the 80's, this meant the average fuel economy of all new cars sold by a given brand had to be 27 MPG or higher. This number is combined with light trucks and SUVs which is why the average is closer to 20, as those vehicles have lower requirements.
+            Around 2007 a trend begins, new vehicle fuel economy begins to steadily rise. This happened for a few reasons. A primary factor in this improvement in fuel economy is NOT government legislation, instead it is global economic disaster. The 2008 recession had a great impact on the auto industry.
+            With all the struggles of the recession, people could no longer afford to keep inefficient vehicles around. Vehicle manufacturers took note, and began making more fuel efficient vehicles. This one aspect of vehicle efficiency is directly reflective of the world economic situation, which is pretty neat.
+            Additionally the Energy Independence and Security Act was passed in 2007, directly raising CAFE standards in order to improve the then stagnant corporate average fuel economy. The combination of market factors (2008 recession) as well as the EISA can be clearly seen fuel economy following 2008.
+            New vehicles have continued to push the standard of efficiency, and once again this can be largely contributed to stricter CAFE standards. The Trump administration decreased CAFE standards in 2021, although this cannot be seen in the EPA data due to the proliferation of electric vehicles skewing the data.
+        </p>
+
+        <p class="story-transition indent">
+            Fuel economy is only a part of the full picture, vehicle emissions is equally as important. You may be astonished when you realized 
+            the next visualization is in grams per mile!
+        </p>
+
+    </section>
+
+
+
+    <!-- SECTION 2 — CO2 EMISSIONS OVER TIME -->
+    <section class="story-section">
+
+        <h2>Vehicle Emissions in the last 40 years</h2>
+
+        <p class="story-text indent">
+            CO2 emissions from motor vehicles is a major contributor to global green house gases, which as we now know has a massive influence on the rate of global warming.
+            Keeping track of our carbon emissions can help track the United States contribution to climate change as well as help keep new vehicle manufacturers accountable.
+            Emissions have largely followed a similar path as fuel efficiency thanks to the same factors like global economies facing issues as well as stricter regulation.
+            However, unlike fuel efficiency this cannot be attributed to CAFE standards, which do not apply to what is emitted through a vehicles exhaust. While increasing efficiency can in turn reduce emissions, it is not the main influence.
+            Similar to vehicle efficiency, there is a notable trend that begins around 2007 where vehicle emissions begin to steadily decrease. This is almost certainly due to Massachusetts vs EPA.
+            The state of Massachusetts asserted that it was the responsibility of the federal government, in particular the EPA, to regulate green house gases. Prior to this, the EPA could did not regulate CO2.
+        </p>
+
+        <div id="chart2"></div>
+
+        <p class="story-interpretation">
+            Understanding the true impact of vehicle emissions is difficult, and this visualization does a good job representing the improvements that have been moved in the last forty years.
+            It is hard to grasp the scale of the data being displayed, so I will try and put it into perspective. In 1985 the average vehicle produced about 480 grams of CO2 every mile driven. This is about 1 pound of of pure CO2 every mile, for every vehicle on the road.
+            Today this number is much lower thanks to a variety of technologies and legislation. In the quest for higher average fuel economy, lower carbon emissions are a natural outcome. Engines have become increasingly small without sacrificing power or efficiency. One the ways this was accomplished was turbocharging, this also meant engines did not have to rev as high. These advancements meant newer cars produced less CO2 per mile than an equivalent car from 20 years prior.
+        </p>
+
+        <p class="story-transition">
+            To further understand how these improvements took place, we need to look at the type of technology being used to accomplish these gains.
+        </p>
+
+    </section>
+
+
+
+    <!-- SECTION 3 — ALTERNATIVE FUEL TECHNOLOGY ADOPTION -->
+    <section class="story-section">
+
+        <h2>How Electric Vehicles Took Over and Replaced Alternative Fuels</h2>
+
+        <p class="story-text indent">
+         Teslas are now everywhere, and electric vehicles as a whole have taken off.
+         It was not always like this, electric vehicles struggled to compete with existing hybrids, eventually escaping their infancy and coming out as the clear "winning" technology in the eyes of the market.   
+        </p>
+
+        <div id="chart3"></div>
+
+        <p class="story-interpretation">
+            There are a variety of trends that can be seen in the visualization, most notably the proliferation of battery electric vehicles since 2020.
+            Electrified vehicles represent the highest volume of alternative fuel vehicles that have ever been sold new in the USA, approaching double the diesel cars that were for sale in the mid to early 1980's.
+            A notable but minor trend can be seen with diesel vehicles in 2015, diesel vehicles see a sharp decline in new vehicles beginning in 2015. This is due to the VW Diesel Gate scandal, where VW used emissions defeat software to illegally pass EPA testing.
+            The category "Alternative Fuels" accounts for vehicles equipped with "flex fuel" systems allowing for multiple fuel types, although these vehicles also ran on gasoline. Other alternative fuels include CNG, LNG, and hydrogen fuel cells. Alternative fuels as a whole begin to decline rapidly in new car models around mid 2010.
+            This decrease coincides with the advent of modern electric cars. Hybrids skyrocketed in popularity around 2020, which is a direct result of EPA guidelines on CO2 emissions that were set to apply in 2023. Increase in hybrids can be seen leading up to the effective change in CO2 guidelines. 
+            Plug-in hybrids are nowhere near as popular as either EVs or regular hybrids, possibly due to the increased cost, similar to an EV, without all of the EV benefits.
+            This visualization ends at 2025, 2026 data is incomplete and would be inaccurate.
+        </p>
+
+        <p class="story-conclusion">
+            Looking across all three visualizations, a clear pattern emerges: the evolution of cleaner cars in the United States has never been driven by a single force. Fuel economy stalled for decades until economic pressure and new legislation pushed automakers to innovate. CO2 emissions fell not because of CAFE, but because the Clean Air Act and later EPA greenhouse-gas rules required manufacturers to reduce tailpipe pollution. Finally, the rapid rise of electrification shows how quickly the market can shift when technology matures and regulatory pressure increases. Together, these trends reveal that cleaner vehicles are the result of intersecting forces—global events, engineering breakthroughs, and environmental policy—shaping the cars we drive and the impact they have on the world.
+        </p>
+
+    </section>
+
+        <section class="story-section">
+    <h2>Sources</h2>
+
+    <ul class="sources-list">
+
+        <li>
+            Environmental Protection Agency. (2026). 
+            <i>Fuel economy data (FuelEconomy.gov)</i>. 
+            https://www.fueleconomy.gov/feg/download.shtml
+        </li>
+
+        <li>
+            Environmental Protection Agency. (2026). 
+            <i>Light-duty automotive technology, carbon dioxide emissions, and fuel economy trends</i>. 
+            https://www.epa.gov/automotive-trends
+        </li>
+
+        <li>
+            National Highway Traffic Safety Administration. (2026). 
+            <i>Corporate Average Fuel Economy (CAFE) standards</i>. 
+            https://www.nhtsa.gov/laws-regulations/corporate-average-fuel-economy
+        </li>
+
+        <li>
+            U.S. Congress. (1975). 
+            <i>Energy Policy and Conservation Act</i>. 
+            https://www.govinfo.gov/content/pkg/COMPS-10553/pdf/COMPS-10553.pdf
+        </li>
+
+        <li>
+            U.S. Congress. (2007). 
+            <i>Energy Independence and Security Act of 2007</i>. 
+            https://www.congress.gov/bill/110th-congress/house-bill/6
+        </li>
+
+        <li>
+            Supreme Court of the United States. (2007). 
+            <i>Massachusetts v. Environmental Protection Agency, 549 U.S. 497</i>. 
+            https://www.supremecourt.gov/opinions/06pdf/05-1120.pdf
+        </li>
+
+        <li>
+            Environmental Protection Agency. (2024). 
+            <i>Greenhouse gas emissions standards for light-duty vehicles</i>. 
+            https://www.epa.gov/regulations-emissions-vehicles-and-engines/regulations-greenhouse-gas-emissions-passenger-cars-and
+        </li>
+
+    </ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
